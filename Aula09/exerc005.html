@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(38, 90, 204);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p class="msgaqui">Aqui vai o resultado</p>
+    <p name="msgdom">Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] // O primeiro Paragrafo <p> é o 0 e não o 1
+        /*
+            window.document.write(`está escrito assim: ${p1.innerHTML}</br>`)
+        p1.style.color = 'yellow'
+        var d = window.document.getElementById('msg')
+        document.write('Está escrito assim também: ' + d.innerText)
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+       var d = window.document.getElementsByName('msgdom')[0] // todos esses comandos de get em plural (elements e não element) precisa do []
+       d.innerText = 'Olá!'
+
+       var d2 = window.document.getElementsByClassName('msgaqui')[0]
+       d2.innerText = 'Aqui vai a resposta'
+
+       var d3 = window.document.querySelector('div#msg') // PARA O ID
+       d3.style.background = 'green'       
+
+       /*
+       var d3 = window.document.querySelector('p.msgaqui') // PARA A CLASS
+       d3.style.background = 'green'
+       */
+    </script>   
+</body>
+</html>

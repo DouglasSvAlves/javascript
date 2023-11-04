@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Para facilitar é só colocar link que ele monta certinho, você troca o nome do href e da ctrl + aperta nele, vai da erro e lá vai ter a opção de já criar o arquivo-->
+</head>
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+
+    <section>
+        <div id="dados">            
+            <p>Início: <input type="number" name="txtinicio" id="inicio"></p>
+            <p>Fim: <input type="number" name="txtfim" id="fim"></p>
+            <p>Passo: <input type="number" name="txtpasso" id="passo"></p>
+            <p><input type="button"  id="contar" value="Contar" onclick="contar()"></p>            
+        </div>
+        <div id="res">
+            Preparando a contagem...
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    
+    <script src="script.js"></script> <!--"Script src" É para linkar o script a um arquivo js-->
+</body>
+</html>

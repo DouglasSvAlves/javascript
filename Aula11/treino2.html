@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nascionalidade</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+            background: blueviolet;
+            color: white
+        }
+        input {
+            font: normal 20px Arial;
+        }
+        input#nasc {
+            background: rgb(1, 94, 89);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de nascionalidade</h1>
+    Onde você nasceu? <input type="text" name="txt" id="txt">
+    <input type="button" id="nasc" value="Verificar" onclick="nascionalidade()">
+    <div id="res">
+
+    </div>
+    <script>
+        function nascionalidade(){
+        var txt = window.document.getElementById('txt')
+        var pais = txt.value
+        res.innerHTML = `Como você nasceu no(a) ${pais} e está no Brasil então `
+        if (pais == 'Brasil') {
+            res.innerHTML += `você é Brasileiro` 
+        } else {
+            res.innerHTML += 'você é Estrangeiro'
+        }
+    }
+
+    </script>
+</body>
+</html>
+

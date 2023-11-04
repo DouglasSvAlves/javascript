@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Para facilitar é só colocar link que ele monta certinho, você troca o nome do href e da ctrl + aperta nele, vai da erro e lá vai ter a opção de já criar o arquivo-->
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Número: <input type="number" name="num" id="num"></p>
+            <p><input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+        </div>
+        <div id="res">
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima</option> <!--Em option só usa o value em php-->
+            </select>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    
+    <script src="script.js"></script> <!--"Script src" É para linkar o script a um arquivo js-->
+</body>
+</html>

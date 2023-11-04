@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Para facilitar é só colocar link que ele monta certinho, você troca o nome do href e da ctrl + aperta nele, vai da erro e lá vai ter a opção de já criar o arquivo-->
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Número entre (1 a 100) <input type="number" name="valor" id="val">
+            <input type="button" value="Adicionar" onclick="adicionar()"></p>
+            <p><select name="Tabela" id="tabval" size="7"></select></p>
+            <p><input type="button" value="Finalizar" onclick="finalizar()"></p>
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    
+    <script src="script.js"></script> <!--"Script src" É para linkar o script a um arquivo js-->
+</body>
+</html>

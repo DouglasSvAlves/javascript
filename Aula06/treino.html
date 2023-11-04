@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt arial    
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var idade = window.prompt('Qual é a sua idade?')
+        var altura = Number(window.prompt('qual é a sua altura?'))
+        var peso = Number(window.prompt('Qual é o seu peso?'))
+        document.write(`Olá, <strong>${nome}</strong> </br>`)
+        document.write('Vamos fazer o seu IMC. Aguarde... </br>')
+        var imc = peso / altura
+        document.write(`Os Seu dados são:</br> Seu nome: ${nome}</br> Sua Idade: ${idade}</br> E seu IMC é: ${imc.toFixed(2)}`)
+    </script>
+</body>
+</html>
